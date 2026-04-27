@@ -3,8 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npx --yes serve@latest . -l 8080",
-    "build": "node build.js",
-    "preview": "npx --yes serve@latest dist -l 8080"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
   }
 }
