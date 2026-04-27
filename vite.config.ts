@@ -17,5 +17,7 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
+    // Avoid clash with the /assets/* URLs that point to public/assets/*.
+    assetsDir: "_static",
   },
 });
