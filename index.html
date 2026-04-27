@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-18 Café — Homemade Comfort Food in Lucas, Kansas</title>
+    <meta
+      name="description"
+      content="Family-style café in Lucas, KS serving chicken fried steak, homemade pies, and hearty breakfasts. Dine-in & takeaway. Open daily until 10 PM."
+    />
+    <link rel="canonical" href="/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="K-18 Café — Homemade Comfort Food" />
+    <meta
+      property="og:description"
+      content="Homemade meals, fresh pies, friendly service in Lucas, Kansas."
+    />
+    <meta property="og:image" content="/assets/hero-cafe.jpg" />
+    <meta property="og:type" content="restaurant.restaurant" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/hero-cafe.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind via CDN (static, no build step required) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Playfair Display"', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              background: '#FBF6EC',
+              foreground: '#3A2A1F',
+              card: '#FFFCF5',
+              muted: '#EFE5D4',
+              'muted-foreground': '#7A6A5C',
+              border: '#E2D6C2',
+              primary: '#4A3527',
+              'primary-foreground': '#FBF6EC',
+              accent: '#B5402C',
+              'accent-foreground': '#FFFFFF',
+              secondary: '#F0E4D0',
+            },
+            boxShadow: {
+              warm: '0 10px 30px -12px rgba(74, 53, 39, 0.35)',
+              card: '0 4px 20px -8px rgba(74, 53, 39, 0.25)',
+            },
+            backgroundImage: {
+              'gradient-warm': 'linear-gradient(135deg, #F5E9D2, #EAD9B8)',
+              'gradient-hero':
+                'linear-gradient(180deg, rgba(40,28,20,0.55), rgba(40,28,20,0.78))',
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Inter', system-ui, sans-serif; background: #FBF6EC; color: #3A2A1F; -webkit-font-smoothing: antialiased; }
+      h1, h2, h3, h4, h5 { font-family: 'Playfair Display', Georgia, serif; letter-spacing: -0.02em; }
+    </style>
+
+    <!-- JSON-LD: Restaurant -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "K-18 Café",
+        "image": "/assets/hero-cafe.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "5495 KS-18",
+          "addressLocality": "Lucas",
+          "addressRegion": "KS",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-785-525-6262",
+        "priceRange": "$10-$20",
+        "servesCuisine": "American",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "418"
+        },
+        "openingHours": "Mo-Su 07:00-22:00"
+      }
+    </script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#top" class="font-display text-2xl font-bold text-foreground">
+          K-18 <span class="text-accent">Café</span>
+        </a>
+        <nav class="hidden items-center gap-7 text-sm font-medium text-foreground/80 md:flex">
+          <a href="#menu" class="hover:text-accent">Menu</a>
+          <a href="#about" class="hover:text-accent">About</a>
+          <a href="#gallery" class="hover:text-accent">Gallery</a>
+          <a href="#contact" class="hover:text-accent">Contact</a>
+        </nav>
+        <a
+          href="tel:+17855256262"
+          class="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground shadow-warm transition-transform hover:scale-105 sm:inline-flex"
+        >
+          Call · 785-525-6262
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="relative isolate overflow-hidden">
+        <img
+          src="/assets/hero-cafe.jpg"
+          alt="Warm interior of K-18 Café with wooden booths and fresh pies"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-hero"></div>
+        <div class="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col items-start justify-center px-6 py-24 text-primary-foreground">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium backdrop-blur">
+            ★ 4.6 stars · 418 reviews
+          </div>
+          <h1 class="max-w-3xl font-display text-5xl font-bold leading-[1.05] sm:text-6xl md:text-7xl text-white">
+            Homemade comfort,<br />served with a smile.
+          </h1>
+          <p class="mt-6 max-w-xl text-lg text-white/85">
+            A family-style café on KS-18 in Lucas, Kansas. Hand-breaded steaks, fresh pies, and the
+            kind of breakfast that keeps folks coming back.
+          </p>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a href="#menu" class="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-warm transition-transform hover:scale-105">
+              View Menu →
+            </a>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=K-18+Cafe+Lucas+Kansas"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur hover:bg-white/20"
+            >
+              📍 Get Directions
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK INFO -->
+      <section class="border-b border-border bg-card">
+        <div class="mx-auto grid max-w-6xl grid-cols-1 divide-y divide-border px-6 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+          <div class="flex items-center gap-4 py-5 sm:px-8">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent text-xl">🕒</span>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-muted-foreground">Open Daily</p>
+              <p class="font-medium text-foreground">Closes at 10 PM</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 py-5 sm:px-8">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent text-xl">📞</span>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-muted-foreground">Call us</p>
+              <a href="tel:+17855256262" class="font-medium text-foreground hover:text-accent">+1 785-525-6262</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 py-5 sm:px-8">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent text-xl">📍</span>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-muted-foreground">Find us</p>
+              <p class="font-medium text-foreground">5495 KS-18, Lucas, KS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="bg-background py-24">
+        <div class="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Our Story</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold text-foreground sm:text-5xl">
+              A small-town café with a big heart.
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-muted-foreground">
+              K-18 Café is a family-style spot where neighbors meet over coffee, travelers stop for
+              a hot meal, and every plate is made from scratch. From slow-simmered gravies to
+              lattice-topped pies cooling on the counter, we cook the way home cooks do — with
+              patience, butter, and a whole lot of care.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-6">
+              <div>
+                <p class="font-display text-3xl font-bold text-foreground">4.6★</p>
+                <p class="text-sm text-muted-foreground">418 happy guests</p>
+              </div>
+              <div>
+                <p class="font-display text-3xl font-bold text-foreground">$10–20</p>
+                <p class="text-sm text-muted-foreground">Per person</p>
+              </div>
+              <div>
+                <p class="font-display text-3xl font-bold text-foreground">Daily</p>
+                <p class="text-sm text-muted-foreground">Open till 10 PM</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="/assets/gallery-counter.jpg"
+            alt="K-18 Café counter with fresh pies"
+            loading="lazy"
+            class="rounded-3xl object-cover shadow-warm"
+          />
+        </div>
+      </section>
+
+      <!-- MENU -->
+      <section id="menu" class="bg-gradient-warm py-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Our Menu</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold text-foreground sm:text-5xl">
+              Made from scratch, every day.
+            </h2>
+            <p class="mt-4 text-muted-foreground">Most plates run $10–20.</p>
+          </div>
+
+          <div class="mt-14 grid gap-8 md:grid-cols-2">
+            <!-- Breakfast -->
+            <div class="rounded-2xl bg-card p-7 shadow-card">
+              <div class="flex items-center gap-4">
+                <img src="/assets/dish-breakfast.jpg" alt="Breakfast" class="h-16 w-16 rounded-full object-cover" />
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider text-accent">Breakfast</p>
+                  <h3 class="font-display text-2xl font-semibold text-foreground">Served all morning</h3>
+                </div>
+              </div>
+              <ul class="mt-6 divide-y divide-border text-sm">
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Buttermilk Pancakes</strong><br/><span class="text-muted-foreground">Stack of three with butter & syrup</span></span><span class="font-display text-accent font-semibold">$9</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Country Breakfast</strong><br/><span class="text-muted-foreground">Two eggs, bacon, hash browns, toast</span></span><span class="font-display text-accent font-semibold">$11</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Biscuits & Gravy</strong><br/><span class="text-muted-foreground">Flaky biscuits in sausage gravy</span></span><span class="font-display text-accent font-semibold">$9</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Steak & Eggs</strong><br/><span class="text-muted-foreground">Sirloin, two eggs, hash browns</span></span><span class="font-display text-accent font-semibold">$16</span></li>
+              </ul>
+            </div>
+
+            <!-- House Favorites -->
+            <div class="rounded-2xl bg-card p-7 shadow-card">
+              <div class="flex items-center gap-4">
+                <img src="/assets/dish-steak.jpg" alt="Chicken fried steak" class="h-16 w-16 rounded-full object-cover" />
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider text-accent">House Favorites</p>
+                  <h3 class="font-display text-2xl font-semibold text-foreground">Plates we're known for</h3>
+                </div>
+              </div>
+              <ul class="mt-6 divide-y divide-border text-sm">
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Chicken Fried Steak</strong><br/><span class="text-muted-foreground">Hand-breaded, country gravy, mash, green beans</span></span><span class="font-display text-accent font-semibold">$17</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Chicken Fried Chicken</strong> <span class="ml-1 rounded-full bg-accent/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-accent">Friday Special</span><br/><span class="text-muted-foreground">Crispy, golden, with all the fixings</span></span><span class="font-display text-accent font-semibold">$16</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Open-Faced Hot Beef</strong><br/><span class="text-muted-foreground">Slow-roasted beef, mash, gravy</span></span><span class="font-display text-accent font-semibold">$15</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Patty Melt</strong><br/><span class="text-muted-foreground">Grilled rye, swiss, onions, fries</span></span><span class="font-display text-accent font-semibold">$13</span></li>
+              </ul>
+            </div>
+
+            <!-- Burgers -->
+            <div class="rounded-2xl bg-card p-7 shadow-card">
+              <div class="flex items-center gap-4">
+                <img src="/assets/dish-chicken.jpg" alt="Sandwiches" class="h-16 w-16 rounded-full object-cover" />
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider text-accent">Sandwiches & Burgers</p>
+                  <h3 class="font-display text-2xl font-semibold text-foreground">Hand-pattied classics</h3>
+                </div>
+              </div>
+              <ul class="mt-6 divide-y divide-border text-sm">
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Classic Cheeseburger</strong><br/><span class="text-muted-foreground">Lettuce, tomato, onion, pickle, fries</span></span><span class="font-display text-accent font-semibold">$12</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Bacon Cheeseburger</strong><br/><span class="text-muted-foreground">Crispy bacon, cheddar, fries</span></span><span class="font-display text-accent font-semibold">$13</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">BLT</strong><br/><span class="text-muted-foreground">Thick-cut bacon, lettuce, tomato, mayo</span></span><span class="font-display text-accent font-semibold">$10</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Grilled Chicken Sandwich</strong><br/><span class="text-muted-foreground">Lettuce, tomato, mayo, fries</span></span><span class="font-display text-accent font-semibold">$12</span></li>
+              </ul>
+            </div>
+
+            <!-- Pies -->
+            <div class="rounded-2xl bg-card p-7 shadow-card">
+              <div class="flex items-center gap-4">
+                <img src="/assets/dish-pie.jpg" alt="Homemade pies" class="h-16 w-16 rounded-full object-cover" />
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider text-accent">Homemade Pies</p>
+                  <h3 class="font-display text-2xl font-semibold text-foreground">Baked fresh in-house</h3>
+                </div>
+              </div>
+              <ul class="mt-6 divide-y divide-border text-sm">
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Rhubarb Pie</strong><br/><span class="text-muted-foreground">Tart, sweet, lattice-topped</span></span><span class="font-display text-accent font-semibold">$6</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Apple Pie à la Mode</strong><br/><span class="text-muted-foreground">Warm slice with vanilla ice cream</span></span><span class="font-display text-accent font-semibold">$7</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Cherry Pie</strong><br/><span class="text-muted-foreground">Bright cherries in a flaky crust</span></span><span class="font-display text-accent font-semibold">$6</span></li>
+                <li class="flex justify-between gap-4 py-3"><span><strong class="font-display text-base">Pecan Pie</strong><br/><span class="text-muted-foreground">Rich, buttery, classic</span></span><span class="font-display text-accent font-semibold">$7</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="bg-background py-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">How to Enjoy K-18</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold text-foreground sm:text-5xl">Dine in or take it home.</h2>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <div class="rounded-2xl border border-border bg-card p-7 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent text-xl">🍽️</span>
+              <h3 class="mt-5 font-display text-2xl font-semibold text-foreground">Dine-In</h3>
+              <p class="mt-2 text-sm text-muted-foreground">Cozy booths, friendly faces, meals served hot at your table.</p>
+              <p class="mt-5 inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">Available</p>
+            </div>
+            <div class="rounded-2xl border border-border bg-card p-7 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent text-xl">🛍️</span>
+              <h3 class="mt-5 font-display text-2xl font-semibold text-foreground">Takeaway</h3>
+              <p class="mt-2 text-sm text-muted-foreground">Call ahead and we'll have your order ready when you arrive.</p>
+              <p class="mt-5 inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">Available</p>
+            </div>
+            <div class="rounded-2xl border border-dashed border-border bg-muted/40 p-7">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-muted text-muted-foreground text-xl">✕</span>
+              <h3 class="mt-5 font-display text-2xl font-semibold text-foreground">Delivery</h3>
+              <p class="mt-2 text-sm text-muted-foreground">We don't deliver — but we'd love to see you in person.</p>
+              <p class="mt-5 inline-block rounded-full bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground">Not available</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="bg-secondary/40 py-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">From Our Guests</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold text-foreground sm:text-5xl">Loved by neighbors & travelers alike.</h2>
+            <p class="mt-4 text-accent">★★★★★ <span class="ml-2 text-sm text-muted-foreground">4.6 from 418 reviews</span></p>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <figure class="rounded-2xl bg-card p-7 shadow-card">
+              <p class="text-3xl text-accent/40">"</p>
+              <blockquote class="mt-1 text-base leading-relaxed text-foreground">Great food and great service for a decent price. We'll be back.</blockquote>
+              <figcaption class="mt-5 text-sm font-semibold text-muted-foreground">— Sarah M.</figcaption>
+            </figure>
+            <figure class="rounded-2xl bg-card p-7 shadow-card">
+              <p class="text-3xl text-accent/40">"</p>
+              <blockquote class="mt-1 text-base leading-relaxed text-foreground">Very homemade — reminds you of grandma's cooking. The pie alone is worth the drive.</blockquote>
+              <figcaption class="mt-5 text-sm font-semibold text-muted-foreground">— Tom R.</figcaption>
+            </figure>
+            <figure class="rounded-2xl bg-card p-7 shadow-card">
+              <p class="text-3xl text-accent/40">"</p>
+              <blockquote class="mt-1 text-base leading-relaxed text-foreground">Amazing place to eat. You absolutely have to try the pancakes!</blockquote>
+              <figcaption class="mt-5 text-sm font-semibold text-muted-foreground">— Jamie L.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="bg-background py-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Gallery</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold text-foreground sm:text-5xl">A taste of K-18.</h2>
+          </div>
+          <div class="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+            <div class="overflow-hidden rounded-2xl shadow-card md:col-span-2 md:row-span-2 aspect-square"><img src="/assets/gallery-applepie.jpg" alt="Apple pie à la mode" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 hover:scale-105" /></div>
+            <div class="overflow-hidden rounded-2xl shadow-card aspect-square"><img src="/assets/dish-breakfast.jpg" alt="Pancake breakfast" loading="lazy" class="h-full w-full object-cover" /></div>
+            <div class="overflow-hidden rounded-2xl shadow-card aspect-square"><img src="/assets/gallery-coffee.jpg" alt="Coffee in cozy booth" loading="lazy" class="h-full w-full object-cover" /></div>
+            <div class="overflow-hidden rounded-2xl shadow-card aspect-square"><img src="/assets/dish-steak.jpg" alt="Chicken fried steak" loading="lazy" class="h-full w-full object-cover" /></div>
+            <div class="overflow-hidden rounded-2xl shadow-card aspect-square"><img src="/assets/gallery-counter.jpg" alt="Café counter" loading="lazy" class="h-full w-full object-cover" /></div>
+            <div class="overflow-hidden rounded-2xl shadow-card md:col-span-2 aspect-[2/1]"><img src="/assets/dish-chicken.jpg" alt="Chicken fried chicken" loading="lazy" class="h-full w-full object-cover" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="bg-gradient-warm py-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Visit & Contact</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold text-foreground sm:text-5xl">We'd love to see you.</h2>
+          </div>
+
+          <div class="mt-12 grid gap-10 lg:grid-cols-5">
+            <div class="space-y-6 lg:col-span-2">
+              <div class="rounded-2xl bg-card p-6 shadow-card">
+                <span class="flex h-11 w-11 items-center justify-center rounded-full bg-accent/10 text-accent text-xl">📍</span>
+                <h3 class="mt-4 font-display text-xl font-semibold">Address</h3>
+                <p class="mt-1">5495 KS-18, Lucas, Kansas, USA</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=K-18+Cafe+Lucas+Kansas" target="_blank" rel="noopener" class="mt-4 inline-block text-sm font-semibold text-accent hover:underline">Get Directions →</a>
+              </div>
+              <div class="rounded-2xl bg-card p-6 shadow-card">
+                <span class="flex h-11 w-11 items-center justify-center rounded-full bg-accent/10 text-accent text-xl">📞</span>
+                <h3 class="mt-4 font-display text-xl font-semibold">Phone</h3>
+                <p class="mt-1">+1 785-525-6262</p>
+                <a href="tel:+17855256262" class="mt-4 inline-block text-sm font-semibold text-accent hover:underline">Call Now →</a>
+              </div>
+              <div class="rounded-2xl bg-card p-6 shadow-card">
+                <span class="flex h-11 w-11 items-center justify-center rounded-full bg-accent/10 text-accent text-xl">🕒</span>
+                <h3 class="mt-4 font-display text-xl font-semibold">Hours</h3>
+                <ul class="mt-4 divide-y divide-border text-sm">
+                  <li class="flex justify-between py-2"><span class="text-muted-foreground">Monday – Sunday</span><span class="font-medium">Open – 10 PM</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="lg:col-span-3">
+              <div class="overflow-hidden rounded-3xl shadow-warm">
+                <iframe
+                  title="K-18 Café location map"
+                  src="https://www.google.com/maps?q=5495+KS-18,+Lucas,+KS&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="h-[520px] w-full border-0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="bg-primary py-20 text-primary-foreground">
+        <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center">
+          <h2 class="font-display text-4xl font-semibold sm:text-5xl text-white">Visit us today.</h2>
+          <p class="max-w-xl text-lg text-white/80">
+            Pull up a booth or call ahead for takeaway. We're on KS-18 in Lucas, Kansas — and we
+            saved a slice of pie just for you.
+          </p>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a href="tel:+17855256262" class="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-warm hover:scale-105 transition-transform">
+              📞 Call for Takeaway
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10">
+              📍 Find Us
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-border bg-card py-10">
+      <div class="mx-auto max-w-6xl px-6 text-center text-sm text-muted-foreground">
+        <p class="font-display text-lg font-bold text-foreground">K-18 <span class="text-accent">Café</span></p>
+        <p class="mt-2">5495 KS-18, Lucas, Kansas · +1 785-525-6262</p>
+        <p class="mt-1">Open daily until 10 PM</p>
+        <p class="mt-4 text-xs">© <span id="year"></span> K-18 Café. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
